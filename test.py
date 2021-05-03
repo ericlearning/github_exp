@@ -5,8 +5,6 @@ import numpy as np
 x = torch.randn(32, 12)
 w = torch.randn(12, 64)
 
-o = x @ w
-
 def mult(a, b):
     """Returns a dot product of two tensors
 
@@ -18,3 +16,6 @@ def mult(a, b):
         Tensor: Dot product result
     """
     return a @ b
+
+out = mult(x, w)
+print(out)
