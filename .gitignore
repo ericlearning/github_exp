@@ -1,3 +1,4 @@
 /.pytest_cache
 /.python-version
 /.vscode
+tests/__pycache__/test_func.cpython-38-pytest-6.2.3.pyc
