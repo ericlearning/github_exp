@@ -25,7 +25,7 @@ def obscure(a, b, c):
         b (Tensor): Yet another amazing tensor
         c (Tensor): Very amazing tensor
     """
-    r = 3.141592
+    r = 3.14
     tmp = (2 * (a + b).sum() ** c.mean()) - r
     return tmp + c
 
