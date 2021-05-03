@@ -17,5 +17,19 @@ def mult(a, b):
     """
     return a @ b
 
-out = mult(x, w)
+def obscure(a, b, c):
+    """Very long and difficult functions
+
+    Args:
+        a (Tensor): Amazing tensor
+        b (Tensor): Yet another amazing tensor
+        c (Tensor): Very amazing tensor
+    """
+    r = 3.141592
+    tmp = (2 * (a + b).sum() ** c.mean()) - r
+    return tmp + c
+
+v1 = mult(x, w)
+v2 = obscure(v1, v1, w)
+out = v1.mean() ** v2.mean()
 print(out)
