@@ -19,3 +19,6 @@ def mult(a, b):
 
 out = mult(x, w)
 print(out)
+print("Stars and Rainbows")
+print("1234567890")
+print("Hello World!")
