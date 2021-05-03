@@ -28,5 +28,3 @@ def test_meow():
     assert meow(-1, 9, -8) == "bark"
     assert meow(-9, -12, -4) == "bark"
     assert meow(0, 0, 183) == "meow"
-
-uskhldjfg;mh;jjfdnk,hfbknkll
