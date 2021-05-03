@@ -4,6 +4,7 @@ import numpy as np
 
 x = torch.randn(32, 12)
 w = torch.randn(12, 64)
+r = torch.randn(64, 128)
 
 def mult(a, b):
     """Returns a dot product of two tensors
@@ -32,4 +33,5 @@ def obscure(a, b, c):
 v1 = mult(x, w)
 v2 = obscure(v1, v1, w)
 out = v1.mean() ** v2.mean()
-print(out)
+final = out * r.mean()
+print(final.max())
